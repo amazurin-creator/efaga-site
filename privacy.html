@@ -9,12 +9,12 @@
 <body>
 <main>
 <h1>Efaga Privacy Policy</h1>
-<p class="muted">Effective 25 October 2026</p>
+<p class="muted">Effective 26 October 2026</p>
 
 <p>Efaga is a food log for iPhone, made by Artem Mazurin, an individual developer based in Cyprus (“I”, “me”). This policy explains what happens to your information when you use the app.</p>
 
 <h2>The short version</h2>
-<p>Efaga has no accounts, no analytics, no ads and no tracking. Everything you enter stays on your iPhone. I never receive your food log, your profile or anything else about you.</p>
+<p>Efaga has no accounts, no analytics, no ads and no tracking. Your food log, your profile and your products stay on your iPhone; I never receive them. The one thing that leaves the phone for my server is a recipe you ask Efi to work out — see below.</p>
 
 <h2>What stays on your phone</h2>
 <ul>
@@ -32,6 +32,10 @@
 </ul>
 <p>These requests carry no name, account or identifier of yours. Like any internet request, they reach Open Food Facts’ servers with your device’s IP address. See the <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy policy</a>.</p>
 <p><strong>Adding products to Open Food Facts.</strong> Some versions of Efaga can add a product you typed in after a scan found nothing to Open Food Facts, so the next person who scans it gets it. When this is on, the app tells you under the form before you save. Only the product is sent — barcode, name and nutrition values — never anything about you. Contributions become public under the Open Database License.</p>
+
+<h2>Efi's kitchen (recipes)</h2>
+<p>When you ask Efi to work out a dish, the recipe text you wrote and the names of your own products (names only, no numbers, no log) are sent to my server on Cloudflare and from there to Anthropic, whose AI model reads the recipe. They are used only to answer that one request: my server does not store the recipe or the product names and does not write them to its logs, and Anthropic processes them under its <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a>, which do not allow training on them.</p>
+<p>To keep the daily limit of recipes, the request carries a random ID created by the app when it was installed. It is not linked to your name, your Apple ID or your device, and my server keeps only a daily count against it, deleted after two days. My server's own log keeps only technical details of each request (the install ID, the result, how long it took and a short reason on failure). As with any internet request, Cloudflare, which hosts the server, sees your device's IP address and may record it in its request logs. The saved dish and the text you wrote stay on your phone.</p>
 
 <h2>Camera</h2>
 <p>Efaga asks for the camera only to read barcodes. The camera image is processed on the device; no photos are taken, stored or sent.</p>
