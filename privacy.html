@@ -9,12 +9,12 @@
 <body>
 <main>
 <h1>Efaga Privacy Policy</h1>
-<p class="muted">Effective 26 October 2026</p>
+<p class="muted">Effective 27 October 2026</p>
 
 <p>Efaga is a food log for iPhone, made by Artem Mazurin, an individual developer based in Cyprus (“I”, “me”). This policy explains what happens to your information when you use the app.</p>
 
 <h2>The short version</h2>
-<p>Efaga has no accounts, no analytics, no ads and no tracking. Your food log, your profile and your products stay on your iPhone; I never receive them. The one thing that leaves the phone for my server is a recipe you ask Efi to work out — see below.</p>
+<p>Efaga has no accounts, no ads and no tracking. Your food log, your profile and your products stay on your iPhone; I never receive them. Two things leave the phone for my server: a recipe you ask Efi to work out, and a short note of which onboarding and subscription screens you reached — see below.</p>
 
 <h2>What stays on your phone</h2>
 <ul>
@@ -35,7 +35,11 @@
 
 <h2>Efi's kitchen (recipes)</h2>
 <p>When you ask Efi to work out a dish, the recipe text you wrote and the names of your own products (names only, no numbers, no log) are sent to my server on Cloudflare and from there to Anthropic, whose AI model reads the recipe. They are used only to answer that one request: my server does not store the recipe or the product names and does not write them to its logs, and Anthropic processes them under its <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a>, which do not allow training on them.</p>
-<p>To keep the daily limit of recipes, the request carries a random ID created by the app when it was installed. It is not linked to your name, your Apple ID or your device, and my server keeps only a daily count against it, deleted after two days. My server's own log keeps only technical details of each request (the install ID, the result, how long it took and a short reason on failure). As with any internet request, Cloudflare, which hosts the server, sees your device's IP address and may record it in its request logs. The saved dish and the text you wrote stay on your phone.</p>
+<p>To keep the daily limit of recipes, the request carries a random ID created by the app when it was installed. It is not linked to your name, your Apple ID or your device, and my server keeps only a daily count against it, deleted after two days. My server's own log keeps only technical details of each request (the install ID, the result, how long it took, a short reason on failure, and which AI model answered and how many tokens it used). As with any internet request, Cloudflare, which hosts the server, sees your device's IP address and may record it in its request logs. The saved dish and the text you wrote stay on your phone.</p>
+
+<h2>Which screens you reached</h2>
+<p>To learn where people give up before they start, the app tells my server when you open it for the first time, which onboarding step you see, whether you finished or skipped it, and — once subscriptions arrive — when you see the subscription screen, which plan you pick and whether a purchase or a restore went through. Each note carries only the step's name, a few words such as where the screen was opened from, the time, the app version and the same random install ID as Efi's recipes. Never your food, weight, height, age or anything you typed.</p>
+<p>As with Efi, Cloudflare sees your IP address when the note arrives; the note itself does not keep it. The notes are kept by Cloudflare Workers Analytics Engine for three months and then deleted. The install ID is random, made by the app and gone if you delete it; it is not tied to your name, your Apple ID or your phone's hardware. The notes are not shared with anyone and are not used for advertising or tracking.</p>
 
 <h2>Camera</h2>
 <p>Efaga asks for the camera only to read barcodes. The camera image is processed on the device; no photos are taken, stored or sent.</p>
